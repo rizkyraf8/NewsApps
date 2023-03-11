@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'dagger.hilt.android.plugin'
+apply plugin: 'org.jetbrains.kotlin.android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion androidCompileSdkVersion
+
+    defaultConfig {
+        applicationId "id.rizkyraf.bankmandiri.course"
+
+        minSdkVersion androidMinSdkVersion
+        targetSdkVersion androidTargetSdkVersion
+        versionCode androidVersionCode
+        versionName androidVersionName
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled = true
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+
+dependencies {
+    def dependencyGroup = [
+            core               : coreDependencies,
+            ui                 : uiDependencies,
+            mvvm               : mvvmDependencies,
+            rest               : restDependencies,
+            supportDependencies: supportDependencies
+    ]
+
+    def kaptGroup = [
+            core: coreKaptDependencies,
+    ]
+
+    dependencyGroup.each { key, dependencies ->
+        dependencies.each { key2, dependency ->
+            implementation dependency
+        }
+    }
+
+    kaptGroup.each { key, dependencies ->
+        dependencies.each { key2, dependency ->
+            kapt dependency
+        }
+    }
+}

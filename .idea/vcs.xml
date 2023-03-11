@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ATOMS" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Android-core-v2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Biznisid-android" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/GetLocals" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/HRDetector" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Layouting" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PegadaianAgenV2-old" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Siakad" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Survei.io" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/android-agen-v2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/android-gis" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/football-app" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pegadaian-agen" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pegadaian-gis" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ppgi-gis" vcs="Git" />
+  </component>
+</project>
